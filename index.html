@@ -1,9 +1,230 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>SNEH B. PATEL</title>
+    <title>SPDIGITALME</title>
   </head>
   <body>
-    <h2>Hello SP</h2>
+    <div class="site-container">
+
+  <div class="ground-line bg-line"></div>
+  <div class="vehicle bulldozer">
+    <svg viewBox="0 0 120 80" width="120" height="80" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 90 20 Q 110 45, 95 75 L 105 75 Q 120 45, 100 20 Z" fill="#999"/>
+      <line x1="60" y1="50" x2="100" y2="50" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 20 55 L 20 25 C 20 15, 25 10, 35 10 L 65 10 C 75 10, 80 15, 80 25 L 80 55 Z" fill="#FFB300"/>
+      <rect x="50" y="15" width="20" height="20" rx="3" fill="#AEE2FF"/>
+      <rect x="30" y="0" width="6" height="15" rx="2" fill="#555"/>
+      <rect x="10" y="55" width="80" height="20" rx="10" fill="#222"/>
+      <circle cx="20" cy="65" r="5" fill="#666"/>
+      <circle cx="35" cy="65" r="5" fill="#666"/>
+      <circle cx="50" cy="65" r="5" fill="#666"/>
+      <circle cx="65" cy="65" r="5" fill="#666"/>
+      <circle cx="80" cy="65" r="5" fill="#666"/>
+    </svg>
+  </div>
+
+  <div class="vehicle crane">
+    <svg viewBox="0 0 150 150" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="100" width="70" height="30" rx="6" fill="#FFCC00"/>
+      <rect x="60" y="65" width="30" height="35" rx="4" fill="#AEE2FF"/>
+      <rect x="60" y="65" width="30" height="35" rx="4" fill="none" stroke="#FFCC00" stroke-width="5"/>
+      <circle cx="35" cy="130" r="12" fill="#222"/>
+      <circle cx="75" cy="130" r="12" fill="#222"/>
+      <circle cx="35" cy="130" r="5" fill="#999"/>
+      <circle cx="75" cy="130" r="5" fill="#999"/>
+
+      <g class="crane-arm-group">
+        <rect x="35" y="85" width="100" height="10" rx="4" fill="#FF8C00"/>
+        <line x1="125" y1="95" x2="125" y2="135" stroke="#333" stroke-width="2"/>
+        <path d="M 120 135 C 120 145, 130 145, 130 135" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <circle cx="40" cy="90" r="10" fill="#333"/>
+    </svg>
+  </div>
+
+  <div class="text-wrapper">
+    <div class="stripes"></div>
+    <h1>Under Construction</h1>
+    <p>We're working on something big!<br>Check back soon for updates.</p>
+  </div>
+
+  <div class="ground-line fg-line"></div>
+  <div class="vehicle forklift">
+    <svg viewBox="0 0 100 80" width="100" height="80" xmlns="http://www.w3.org/2000/svg">
+      <rect x="10" y="30" width="55" height="35" rx="8" fill="#FFCC00"/>
+      <path d="M 20 30 L 25 5 L 50 5 L 55 30" fill="none" stroke="#333" stroke-width="5" stroke-linejoin="round"/>
+      <rect x="25" y="25" width="10" height="10" fill="#333"/>
+      <rect x="70" y="5" width="6" height="60" rx="2" fill="#333"/>
+      <path d="M 75 55 L 98 55" fill="none" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+      <path d="M 75 60 L 98 60" fill="none" stroke="#222" stroke-width="3" stroke-linecap="round"/> <circle cx="25" cy="65" r="10" fill="#222"/>
+      <circle cx="55" cy="65" r="10" fill="#222"/>
+      <circle cx="25" cy="65" r="4" fill="#999"/>
+      <circle cx="55" cy="65" r="4" fill="#999"/>
+    </svg>
+  </div>
+
+</div>
+
+<style>
+  /* Import a friendly, thick cartoonish font */
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Titan+One&display=swap');
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  /* Main Container - Sand/Light Dirt Theme */
+  .site-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #E8D5B5; /* Light sand/dirt */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Typography & Text Container */
+  .text-wrapper {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    color: #2A2A2A;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 2px solid rgba(255,255,255,0.6);
+  }
+
+  .text-wrapper h1 {
+    font-family: 'Titan One', cursive;
+    font-size: 4rem;
+    margin: 0 0 10px 0;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #FFCC00;
+  }
+
+  .text-wrapper p {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 0;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  /* Construction Tape Accent */
+  .stripes {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: repeating-linear-gradient(
+      45deg,
+      #FFCC00,
+      #FFCC00 10px,
+      #222 10px,
+      #222 20px
+    );
+  }
+
+  /* Dirt Paths / Ground Lines */
+  .ground-line {
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px dashed rgba(160, 130, 90, 0.4);
+  }
+  .bg-line { top: 35%; z-index: 1; }
+  .fg-line { bottom: 20%; z-index: 9; }
+
+  /* Vehicle Base Styling */
+  .vehicle {
+    position: absolute;
+  }
+
+  /* Bulldozer - Background Layer */
+  .bulldozer {
+    top: calc(35% - 65px); /* Sits on bg-line */
+    left: -150px;
+    z-index: 2;
+    transform: scale(0.7);
+    opacity: 0.8; /* slightly faded for depth */
+    animation: driveSlow 30s linear infinite;
+  }
+
+  /* Forklift - Foreground Layer */
+  .forklift {
+    bottom: calc(20% - 15px); /* Sits on fg-line */
+    left: -150px;
+    z-index: 10; /* In front of text */
+    animation: driveFast 17s linear infinite;
+  }
+
+  /* Crane - Parked on the Right */
+  .crane {
+    bottom: calc(35% - 20px);
+    right: 5%;
+    z-index: 4; /* Behind text, in front of bulldozer */
+    transform: scaleX(-1) scale(1.1); /* Flips it to face the text */
+  }
+
+  /* Crane Arm Animation */
+  .crane-arm-group {
+    /* Magic numbers based on the SVG circle pivot point (cx=40, cy=90) */
+    transform-origin: 40px 90px;
+    animation: liftArm 8s ease-in-out infinite;
+  }
+
+  /* Keyframe Animations */
+
+  /* Bulldozer moves slowly across, pauses, flips, returns */
+  @keyframes driveSlow {
+    0%   { left: -150px; transform: scale(0.7) scaleX(1); }
+    40%  { left: calc(100% + 150px); transform: scale(0.7) scaleX(1); } /* Drives right */
+    45%  { left: calc(100% + 150px); transform: scale(0.7) scaleX(-1); } /* Pauses, flips */
+    85%  { left: -150px; transform: scale(0.7) scaleX(-1); } /* Drives left */
+    90%  { left: -150px; transform: scale(0.7) scaleX(1); } /* Pauses, flips back */
+    100% { left: -150px; transform: scale(0.7) scaleX(1); } /* Wait */
+  }
+
+  /* Forklift moves a bit faster, similar logic */
+  @keyframes driveFast {
+    0%   { left: -150px; transform: scale(1) scaleX(1); }
+    10%  { left: -150px; transform: scale(1) scaleX(1); } /* Wait a moment before starting */
+    45%  { left: calc(100% + 150px); transform: scale(1) scaleX(1); } /* Drives right */
+    50%  { left: calc(100% + 150px); transform: scale(1) scaleX(-1); } /* Pauses, flips */
+    85%  { left: -150px; transform: scale(1) scaleX(-1); } /* Drives left */
+    95%  { left: -150px; transform: scale(1) scaleX(1); } /* Pauses, flips */
+    100% { left: -150px; transform: scale(1) scaleX(1); }
+  }
+
+  /* Crane arm lifts, pauses, goes down */
+  @keyframes liftArm {
+    0%, 15% { transform: rotate(0deg); } /* Resting */
+    40%, 60% { transform: rotate(-35deg); } /* Lifted and held */
+    85%, 100% { transform: rotate(0deg); } /* Back down */
+  }
+
+  /* Responsive Adjustments for Mobile */
+  @media (max-width: 768px) {
+    .text-wrapper h1 { font-size: 2.5rem; }
+    .text-wrapper p { font-size: 1rem; }
+    .text-wrapper { padding: 30px 20px; width: 85%; }
+    .crane { transform: scaleX(-1) scale(0.7); right: -10%; }
+    .forklift { transform: scale(0.8); }
+    .bulldozer { transform: scale(0.5); }
+  }
+</style>
   </body>
 </html>
